@@ -1,7 +1,9 @@
 # Draw me
 
-Generating ideas for drawing!
+A page generating ideas for drawing.
 
-JS rewrite of [an original PHP version](http://probablement.net/drawme/).
+* **Try it here: <http://nclm.github.io/draw-me>**
 
-Plus Git so everyone can add words!
+Add new words to [words.js](//github.com/nclm/draw-me/blob/gh-pages/words.js).
+
+(JS rewrite of [an original PHP version](http://probablement.net/drawme/).)
