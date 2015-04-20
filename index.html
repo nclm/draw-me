@@ -1,3 +1,25 @@
-<h1>Draw me</h1>
-<p>Soon.</p>
-<p><a href='http://probablement.net/drawme/'>For now…</a></p>
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Draw me</title>
+		<link href='drawme.css' rel='stylesheet'>
+		<script src='words.js'></script>
+		<script src='drawme.js'></script>
+	</head>
+	<body id='page'>
+		<blockquote id='drawme' onclick='update();'>
+			<span>Draw me </span>
+			<span id='what'>something</span>
+		</blockquote>
+		<nav>
+			<a href='http://drawmegallery.tumblr.com'>Gallery</a>
+			<!--<a href='http://probablement.net/drawme'>Old version</a>-->
+			<!--<a href='#'>About</a>-->
+			<a href='https://github.com/nclm/draw-me'>Contribute</a>
+		</nav>
+		<script>
+			update();
+		</script>
+	</body>
+</html>
