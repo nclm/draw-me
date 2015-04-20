@@ -18,7 +18,7 @@ noun3 = pick.apply(this, nouns);
 // Transitive verbs
 verb1 = pick.apply(this, verbs);
 verb2 = pick.apply(this, verbs);
-verb3 = pick.apply(this, nouns);
+verb3 = pick.apply(this, verbs);
 // Contexts
 context1 = pick.apply(this, contexts);
 context2 = pick.apply(this, contexts);
