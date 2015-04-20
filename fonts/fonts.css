@@ -5,5 +5,6 @@
 font-family: 'WorkSans-SemiBold';
 src: url('WorkSans-SemiBold.woff2') format('woff2'),
      url('WorkSans-SemiBold.woff') format('woff'),
-     url('WorkSans-SemiBold.ttf') format('opentype');
+     url('WorkSans-SemiBold.ttf') format('truetype'),
+     url('WorkSans-SemiBold.otf') format('opentype');
 }
