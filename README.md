@@ -2,7 +2,7 @@
 
 A page generating ideas for drawing.
 
-* **Try it here: <http://nclm.github.io/draw-me>**
+* **Try it here: <http://drawme.probablement.net>**
 
 Add new words to [words.js](//github.com/nclm/draw-me/blob/gh-pages/words.js).
 
