@@ -4,26 +4,65 @@
 * { border:  none;  margin: 0; font-weight: inherit; text-decoration: inherit;
     outline: none; padding: 0; font-family: inherit; font-size: 1em;         }
 
-/* general */
+/* page */
 
 body {
  font-family: 'WorkSans-SemiBold', sans-serif;
+ font-size: 20px;
+}
+
+#home {
  color: white;
  background: #a45; /* Replaced in JS */
- font-size: 20px;
  overflow: hidden;
 }
 
-::-moz-selection { background: transparent; color: white; }
-     ::selection { background: transparent; color: white; }
+#gallery {
+ color: black;
+ background: white;
+}
 
-a, a:link, a:visited {
+/* text selection */
+
+#home ::-moz-selection { background: transparent; color: white; }
+#home      ::selection { background: transparent; color: white; }
+
+#gallery ::-moz-selection { background: black; color: white; }
+#gallery      ::selection { background: black; color: white; }
+
+/* links */
+
+a,
+a:link,
+a:visited {
+}
+
+#home a,
+#home a:link,
+#home a:visited {
  color: white;
 }
 
-a:hover, a:focus {
- border-bottom: solid .2em white;
+#gallery a,
+#gallery a:link,
+#gallery a:visited {
+ color: black;
+}
+
+a:hover,
+a:focus {
+ border-bottom: solid .2em;
  margin-bottom: -.2em;
+}
+
+#home a:hover,
+#home a:focus {
+ border-color: white;
+}
+
+#gallery a:hover,
+#gallery a:focus {
+ border-color: black;
 }
 
 /* draw me sentence */
@@ -33,7 +72,7 @@ blockquote {
  text-align: center;
 }
 
-blockquote#drawme {
+#home blockquote {
  display: table-cell;
  width: calc(100vw - 2em); 
  height: calc(100vh - 2em);
@@ -42,13 +81,45 @@ blockquote#drawme {
  cursor: help;
 }
 
+#gallery blockquote {
+ font-size: 2em;
+ margin-top: .5em;
+}
+
+
 /* navigation */
 
 nav a {
- position: absolute;
+ position: fixed;
 }
 
 nav a:nth-child(1) {    top: .5em;  left: .5em; }
 nav a:nth-child(2) {    top: .5em; right: .5em; }
 nav a:nth-child(3) { bottom: .5em;  left: .5em; }
 nav a:nth-child(4) { bottom: .5em; right: .5em; }
+
+/* gallery items */
+
+#gallery article {
+ text-align: center;
+ margin-top: 4em;
+}
+
+#gallery article img {
+ width: calc(100vw - 2em);
+ max-width: 800px;
+}
+
+#gallery .social {
+ margin-top: 1em;
+}
+
+#gallery .pagination {
+ list-style: none;
+ text-align: center;
+ margin: 4em 0 .5em 0;
+}
+
+#gallery .pagination li {
+ display: inline;
+}
