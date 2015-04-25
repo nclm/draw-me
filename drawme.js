@@ -28,7 +28,6 @@ context2 = pick.apply(this, contexts);
 context3 = pick.apply(this, contexts);
 
 // Sentences
-// Todo: make a sentence structure generator
 sentences = new Array(
 // adjective1+' '+noun1+' '+verb1+' '+adjective2+' '+noun2+' '+'and'+' '+adjective3+' '+noun3+' '+context1,
 // adjective1+' '+noun1+' '+verb1+' '+adjective2+' '+noun2+' '+'and'+' '+adjective3+' '+noun3,
@@ -41,11 +40,9 @@ sentence = sentences[Math.floor(Math.random()*sentences.length)]+'.';
 
 // Write it!
 var what =  document.getElementById('what')
-
 if (what) {
  what.innerHTML = sentence;
 }
-
 };
 
 // Make colours 
@@ -57,22 +54,11 @@ function colours() {
 
 // Colour things
 function colouring() {
-
 var home = document.getElementById('home');
-var quotes = document.querySelectorAll('#gallery blockquote');
-
 if (home) {
  colours();
  home.style.background = 'rgb('+r+','+g+','+b+')';
 }
-
-if (quotes) {
- for (i = 0; i < quotes.length; i++) {
-  colours();
-  quotes[i].style.color = 'rgb('+r+','+g+','+b+')';
- }
-}
-
 };
 
 // Do everything
